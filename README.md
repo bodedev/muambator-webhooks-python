@@ -1,4 +1,4 @@
-# muambator-webhooks-python
+# Muambator - Webhooks (Python)
 Exemplo em Python para receber as notificações webhooks do [Muambator](http://www.muambator.com.br).
 
 ## Como instalar?

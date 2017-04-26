@@ -1,5 +1,5 @@
 # muambator-webhooks-python
-Exemplo em Python para receber as notificações webhooks do Muambator.
+Exemplo em Python para receber as notificações webhooks do [Muambator](http://www.muambator.com.br).
 
 ## Como instalar?
 
@@ -23,7 +23,7 @@ python main.py
 
 ## Como funciona?
 
-Uma vez que você tenha habilitado as notificações na sua conta do Muambator, quando o sistema detectar mudanças no tracking dos pacotes, será enviado um webhook para o endereço configurado. 
+Uma vez que você tenha habilitado as notificações na sua conta do [Muambator](http://www.muambator.com.br), quando o sistema detectar mudanças no tracking dos pacotes, será enviado um webhook para o endereço configurado. 
 
 Exemplo de uma requisição recebida pelo sistema:
 
@@ -54,3 +54,29 @@ Local: MALASIA
 Situação: Objeto postado
 127.0.0.1 - - [26/Apr/2017 15:39:49] "POST /webhook HTTP/1.1" 200 -
 ```
+
+## Tá, e como eu faço pra testar?
+
+Já dizia o Chapolim Colorado:
+
+> "Calma, calma priemos cânico." 
+
+Nós já sabemos que você já fica tenso esperando seus pacotinhos, imagina esperando um pacote atualizar pra você receber uma notificação. Foi por isso que nós inventamos o super hiper mega boga "webhook personaltificator tester Muambator". Esse sistema é responsável por gerar mensagens para você testar sua  implementação. Como funciona? 
+
+Uma vez que você tenha o webhook ativado na sua conta do Muambator, basta você acessar os detalhes de um pacote e depois clicar no pequeno ícone do sino. Esse clique irá gerar um webhook de testes baseado nos dados do pacote escolhido para você testar o seu sistema.
+
+## Beleza, vamos usar essa entronha. Há limites diários de notificações?
+
+Não.
+
+## Há! Mas se meu servidor está sempre muito ocupado e não está recebendo as mensagens?
+
+Galera, processamos centenas de milhares de pacotes a cada 30 minutos em todo Muambator. Para evitar mais atrasos, temos um timeout de 5 segundos para cada tentativa de enviar uma notificação webhook.
+
+## Quais são os IPs que irão apresentar a notificação?
+
+Depende do dia. Nossa infra-estrutura é composta de diversas máquinas espalhadas ao redor do mundo para ajudar na árdua tarefa de procurar atualizações. Como alocamos diversas máquinas dinamicamente, não podemos garantir quais serão esses IPs.
+
+## Eu to cheio de dúvida. Também tenho um monte de sugestões ou ideias novas para melhorar a plataforma. #comofaz?
+
+Faz o seguinte, traz uma cerveja aqui no escritório numa tarde que a gente conversa pessoalmente. Combinado? Mas caso você seja um burocrata, ou esteja a algumas milhas de distância, por favor, registre o seu [contato](http://www.muambator.com.br/contato/).

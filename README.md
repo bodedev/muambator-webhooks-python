@@ -59,7 +59,7 @@ Situação: Objeto postado
 
 Já dizia o Chapolim Colorado:
 
-> "Calma, calma priemos cânico." 
+> "Calma, calma, não priemos cânico." 
 
 Nós já sabemos que você já fica tenso esperando seus pacotinhos, imagina esperando um pacote atualizar pra você receber uma notificação. Foi por isso que nós inventamos o super hiper mega boga "webhook personaltificator tester Muambator". Esse sistema é responsável por gerar mensagens para você testar sua  implementação. Como funciona? 
 

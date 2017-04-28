@@ -25,34 +25,57 @@ python main.py
 
 Uma vez que você tenha habilitado as notificações na sua conta do [Muambator](http://www.muambator.com.br), quando o sistema detectar mudanças no tracking dos pacotes, será enviado um webhook para o endereço configurado. 
 
-Exemplo de uma requisição recebida pelo sistema:
+Exemplo do JSON de uma requisição recebida pelo sistema:
 
-```sh
-(env)ironworld:muambator-webhooks-python ironworld$ python main.py
- * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 193-042-188
-Código do pacote: RQ108584376MY
-País de origem: Malásia
-Operagora logística: correios
-Número de dias: 23
-Número de dias úteis: 15
-Nome: Lanterna
-Tags: aliexpress,cheap,flashlight
-************************************************************
-Data/Hora: 20/04/2017 10:27
-Local: UNIDADE INTERNACIONAL CURITIBA - CURITIBA/PR
-Situação: Recebido/Brasil
-************************************************************
-Data/Hora: 06/04/2017 13:24
-Local: MALASIA Objeto encaminhado
-Situação: Em trânsito para Unidade de Tratamento Internacional - BRASIL/BR
-************************************************************
-Data/Hora: 03/04/2017 18:17
-Local: MALASIA
-Situação: Objeto postado
-127.0.0.1 - - [26/Apr/2017 15:39:49] "POST /webhook HTTP/1.1" 200 -
+```json
+{
+  "PN691281769BR": {
+    "pais_origem": "Brasil",
+    "sigla_pais_origem": "br",
+    "ultimo_tracking": {
+      "map": "Porto Alegre, RS, Brasil",
+      "datahora": "08/04/2017 11:49",
+      "local": "CEE CENTRO - Porto Alegre/RS",
+      "situacao": "Entrega Efetuada",
+      "icone": "green"
+    },
+    "tags": [],
+    "extraviado_ou_devolvido": false,
+    "tributado": false,
+    "ultimas_mudancas": [
+      {
+        "map": "Sao Paulo, SP, Brasil",
+        "datahora": "31/03/2017 12:54",
+        "local": "CTE SAUDE - Sao Paulo/SP Objeto encaminhado",
+        "situacao": "Em tr\u00e2nsito para CTE PORTO ALEGRE - PORTO ALEGRE/RS",
+        "icone": "orange"
+      },
+      {
+        "map": "Sao Paulo, SP, Brasil",
+        "datahora": "31/03/2017 10:21",
+        "local": "AGF ADOLFO PINHEIRO - Sao Paulo/SP Objeto encaminhado",
+        "situacao": "Em tr\u00e2nsito para CTE SAUDE - Sao Paulo/SP",
+        "icone": "orange"
+      },
+      {
+        "map": "Sao Paulo, SP, Brasil",
+        "datahora": "30/03/2017 17:29",
+        "local": "AGF ADOLFO PINHEIRO - Sao Paulo/SP",
+        "situacao": "Objeto postado",
+        "icone": "yellow"
+      }
+    ],
+    "entregue": true,
+    "arquivado": false,
+    "icone": "",
+    "numero_dias": 9,
+    "marcado_como_entregue": false,
+    "carrier": "correios",
+    "nome": "",
+    "codigo": "PN691281769BR",
+    "numero_dias_uteis": 6
+  }
+}
 ```
 
 ## Tá, e como eu faço pra testar?

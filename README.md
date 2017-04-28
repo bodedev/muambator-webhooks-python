@@ -65,6 +65,17 @@ Nós já sabemos que você já fica tenso esperando seus pacotinhos, imagina esp
 
 Uma vez que você tenha o webhook ativado na sua conta do Muambator, basta você acessar os detalhes de um pacote e depois clicar no pequeno ícone do sino. Esse clique irá gerar um webhook de testes baseado nos dados do pacote escolhido para você testar o seu sistema.
 
+## Beleza! Mas e se meu computador não estiver "exposto" na Internet (leia-se, atrás de um NAT), o que posso fazer?
+
+Você pode expor seu computador através de algum dos seguintes serviços apresentados abaixo:
+
+- [ngrok](https://ngrok.com/)
+- [localtunnel](https://localtunnel.github.io/www/)
+- [portmap.io](https://portmap.io/)
+- [pagekite](https://pagekite.net/)
+- [openport](https://openport.io/)
+- ​
+
 ## Beleza, vamos usar essa entronha. Há limites diários de notificações?
 
 Não.

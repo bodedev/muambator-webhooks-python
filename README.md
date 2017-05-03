@@ -97,7 +97,6 @@ Você pode expor seu computador através de algum dos seguintes serviços aprese
 - [portmap.io](https://portmap.io/)
 - [pagekite](https://pagekite.net/)
 - [openport](https://openport.io/)
-- ​
 
 ## Beleza, vamos usar essa entronha. Há limites diários de notificações?
 
